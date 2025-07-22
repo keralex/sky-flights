@@ -18,7 +18,7 @@ const FlightLocationSelector = () => {
         fullWidth
         value={origin}
         onChange={(e) => setOrigin(e.target.value)}
-        placeholder="Origen"
+        placeholder="Where from"
         slotProps={{
           input: {
             startAdornment: (
@@ -37,7 +37,7 @@ const FlightLocationSelector = () => {
         fullWidth
         value={destination}
         onChange={(e) => setDestination(e.target.value)}
-        placeholder="Destino"
+        placeholder="Where to"
         slotProps={{
           input: {
             startAdornment: (

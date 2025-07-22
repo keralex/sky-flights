@@ -18,10 +18,10 @@ interface PassengerCategory {
 }
 
 const categories: PassengerCategory[] = [
-    { label: 'Adultos', description: '12+ años', key: 'adults' },
-    { label: 'Niños', description: '2–11 años', key: 'children' },
-    { label: 'Bebés con asiento', key: 'infantsWithSeat' },
-    { label: 'Bebés sin asiento', key: 'infantsWithoutSeat' },
+    { label: 'Adults', description: '12+ años', key: 'adults' },
+    { label: 'Children', description: '2–11 años', key: 'children' },
+    { label: 'Infants with seats', key: 'infantsWithSeat' },
+    { label: 'Infants without seats', key: 'infantsWithoutSeat' },
 ]
 
 const initialCounts = {
@@ -73,7 +73,7 @@ const PassengerSelector = () => {
                 variant="outlined"
                 sx={{ textTransform: 'none' }}
             >
-                {totalPassengers} pasajero{totalPassengers !== 1 ? 's' : ''}
+                {totalPassengers} {totalPassengers !== 1 ? 's' : ''}
             </Button>
 
             <Menu
@@ -115,9 +115,9 @@ const PassengerSelector = () => {
                     <Divider sx={{ my: 1 }} />
 
                     <Box display="flex" justifyContent="flex-end" gap={1}>
-                        <Button onClick={handleCancel}>Cancelar</Button>
+                        <Button onClick={handleCancel}>Cancel</Button>
                         <Button variant="contained" onClick={handleConfirm}>
-                            Listo
+                            Done
                         </Button>
                     </Box>
                 </Box>

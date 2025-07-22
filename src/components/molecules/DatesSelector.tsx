@@ -13,14 +13,14 @@ const DateSelector = () => {
         <Box sx={{ display: 'flex', gap: 2 }}>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DatePicker
-                    label="Fecha de salida"
+                    label="Departure "
                     value={departureDate}
                     onChange={(newValue) => setDepartureDate(newValue)}
                     slotProps={{ textField: { fullWidth: true } }}
                 />
 
                 <DatePicker
-                    label="Fecha de regreso"
+                    label="Return "
                     value={returnDate}
                     onChange={(newValue) => setReturnDate(newValue)}
                     slotProps={{ textField: { fullWidth: true } }}
