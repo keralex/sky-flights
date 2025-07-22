@@ -1,5 +1,5 @@
 import { Container } from '@mui/material'
-import Header from '../organisms/Header'
+import Header from '../organisms/Header/Header'
 import { type PropsWithChildren } from 'react'
 
 const MainLayout = ({ children }: PropsWithChildren) => {

@@ -1,12 +1,10 @@
+import { SearchForm } from '../organisms/SearchForm/SearchForm'
 import MainLayout from '../templates/MainLayout'
-import { Typography } from '@mui/material'
 
 const HomePage = () => {
     return (
         <MainLayout>
-            <Typography variant="h4" gutterBottom>
-                Find your next flight
-            </Typography>
+            <SearchForm />
             {/* Insert SearchForm and PaginatedTable here */}
         </MainLayout>
     )

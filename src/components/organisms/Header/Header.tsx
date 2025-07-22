@@ -4,10 +4,10 @@ import Toolbar from '@mui/material/Toolbar'
 
 const Header = () => {
     return (
-        <AppBar position="static" color="primary" enableColorOnDark>
+        <AppBar position="static" color='transparent' enableColorOnDark>
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
-                    SkyFlights
+                <Typography variant="h6" color='primary' component="div" sx={{ fontWeight: 'bold' }}>
+                    Sky Flights
                 </Typography>
             </Toolbar>
         </AppBar>
