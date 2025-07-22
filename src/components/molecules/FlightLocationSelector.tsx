@@ -1,4 +1,4 @@
-import { IconButton, TextField, InputAdornment, Paper } from '@mui/material'
+import { IconButton, TextField, InputAdornment, Box } from '@mui/material'
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { useState } from 'react'
@@ -13,7 +13,7 @@ const FlightLocationSelector = () => {
   }
 
   return (
-    <Paper elevation={1} sx={{ display: 'flex', alignItems: 'center', p: 1, gap: 1 }}>
+    <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <TextField
         fullWidth
         value={origin}
@@ -30,7 +30,7 @@ const FlightLocationSelector = () => {
         }}
       />
 
-      <IconButton onClick={handleSwap} size="large" sx={{ mx: 1 }}>
+      <IconButton onClick={handleSwap} size="medium">
         <SwapHorizIcon />
       </IconButton>
       <TextField
@@ -49,7 +49,7 @@ const FlightLocationSelector = () => {
         }}
       />
 
-    </Paper>
+    </Box>
   )
 }
 
