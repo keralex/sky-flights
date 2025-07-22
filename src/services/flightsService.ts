@@ -1,7 +1,9 @@
+import type { FlightSearchParams, FlightSearchResponse } from "../types/flights";
+
 const BASE_URL =
     "https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchFlights";
 
-export const fetchFlights = async (params: Record<string, string>) => {
+export const fetchFlights = async (params: FlightSearchParams): Promise<FlightSearchResponse>=> {
     const url = new URL(BASE_URL);
 
     Object.entries(params).forEach(([key, value]) => {
